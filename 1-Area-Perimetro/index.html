@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Area y Perimero</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="cabezera">
+    <h1>Área y perímetro</h1>
+    <p>Cálculos de área y perímetro de las formas geométricas.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2 class="card-Titulo">Triángulo</h2>
+      <div class="figure">
+        <svg width="139" height="120" viewBox="0 0 139 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.24905 117.75L69.5 3.00001L135.751 117.75H3.24905Z" stroke="black" stroke-width="3" />
+        </svg>
+        <div class="formulas">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+              <mi>P</mi>
+              <mo>=</mo>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mo>+</mo>
+              <mi>c</mi>
+            </mrow>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+              <mi>A</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mi>b</mi>
+                  <mo>x</mo>
+                  <mi>h</mi>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+      <form id="formulario" action="">
+        <div class="inputs-entradas">
+          <div class="input">
+            <label for="a-triangulo"> a = </label>
+            <input id="a-triangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="b-triangulo"> b = </label>
+            <input id="b-triangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="c-triangulo"> c = </label>
+            <input id="c-triangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="h-triangulo"> h = </label>
+            <input id="h-triangulo" type="text" />
+          </div>
+        </div>
+        <input id="calcular-triangulo" class="btn" type="submit" value="Calcular">
+
+        <div class="inputs-salidas">
+          <div class="input">
+            <label for="per-triangulo"> Perímetro = </label>
+            <input id="per-triangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="area-triangulo"> Área = </label>
+            <input id="area-triangulo" type="text" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2 class="card-Titulo">Rectangulo</h2>
+      <div class="figure">
+        <svg width="178" height="106" viewBox="0 0 178 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="175" height="103" stroke="black" stroke-width="3" />
+        </svg>
+        <div class="formulas">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+            <mo>x</mo>
+            <mo stretchy="false">(</mo>
+            <mi>b</mi>
+            <mo>+</mo>
+            <mi>a</mi>
+            <mo stretchy="false">)</mo>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo>=</mo>
+            <mi>b</mi>
+            <mo>x</mo>
+            <mi>a</mi>
+          </math>
+        </div>
+      </div>
+      <form id="formulario" action="">
+        <div class="inputs-entradas">
+          <div class="input">
+            <label for="a-rectangulo"> a = </label>
+            <input id="a-rectangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="b-rectangulo"> b = </label>
+            <input id="b-rectangulo" type="text" />
+          </div>
+
+        </div>
+        <input id="calcular-rectangulo" class="btn" type="submit" value="Calcular">
+
+        <div class="inputs-salidas">
+          <div class="input">
+            <label for="per-rectangulo"> Perímetro = </label>
+            <input id="per-rectangulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="area-rectangulo"> Área = </label>
+            <input id="area-rectangulo" type="text" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2 class="card-Titulo">Cuadrado</h2>
+      <div class="figure">
+        <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="116" height="116" stroke="black" stroke-width="3" />
+        </svg>
+        <div class="formulas">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mn>4</mn>
+            <mo>x</mo>
+            <mi>a</mi>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo>=</mo>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+          </math>
+        </div>
+      </div>
+      <form id="formulario" action="">
+        <div class="inputs-entradas">
+          <div class="input input-centrado">
+            <label for="a-cuadrado"> a = </label>
+            <input id="a-cuadrado" type="text" />
+          </div>
+
+        </div>
+        <input id="calcular-cuadrado" class="btn" type="submit" value="Calcular">
+
+        <div class="inputs-salidas">
+          <div class="input">
+            <label for="per-cuadrado"> Perímetro = </label>
+            <input id="per-cuadrado" type="text" />
+          </div>
+          <div class="input">
+            <label for="area-cuadrado"> Área = </label>
+            <input id="area-cuadrado" type="text" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2 class="card-Titulo">Circulo</h2>
+      <div class="figure">
+        <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="53" cy="53" r="51.5" stroke="black" stroke-width="3" />
+        </svg>
+        <div class="formulas">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+            <mo>x</mo>
+            <mi>&#x3C0;</mi>
+            <mo>x</mo>
+            <mi>r</mi>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>A</mi>
+            <mo>=</mo>
+            <mi>&#x3C0;</mi>
+            <mo>x</mo>
+            <msup>
+              <mi>r</mi>
+              <mn>2</mn>
+            </msup>
+          </math>
+        </div>
+      </div>
+      <form id="formulario" action="">
+        <div class="inputs-entradas">
+          <div class="input input-centrado">
+            <label for="a-circulo"> r = </label>
+            <input id="a-circulo" type="text" />
+          </div>
+
+        </div>
+        <input id="calcular-circulo" class="btn" type="submit" value="Calcular">
+
+        <div class="inputs-salidas">
+          <div class="input">
+            <label for="per-circulo"> Perímetro = </label>
+            <input id="per-circulo" type="text" />
+          </div>
+          <div class="input">
+            <label for="area-circulo"> Área = </label>
+            <input id="area-circulo" type="text" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/triangulo.js"></script>
+  <script src="js/rectangulo.js"></script>
+  <script src="js/cuadrado.js"></script>
+  <script src="js/circulo.js"></script>
+</body>
+
+</html>
