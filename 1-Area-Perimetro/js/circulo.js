@@ -1,6 +1,3 @@
-const btnCirculo = document.querySelector('#calcular-circulo')
-btnCirculo.addEventListener("click", calcularCirculo)
-
 
 
 function perimetroCirculo(a) {
@@ -8,18 +5,20 @@ function perimetroCirculo(a) {
 }
 
 function areaCirculo(a) {
-    return Math.PI * Math.pow(a,2)
+    return Math.PI * Math.pow(a, 2)
 }
 
 function calcularCirculo(e) {
     e.preventDefault()
     const aCirculo = parseInt(document.querySelector('#a-circulo').value)
-  
+
     const perCirculo = document.querySelector('#per-circulo')
     const areCirculo = document.querySelector('#area-circulo')
-    
+
 
     perCirculo.value = perimetroCirculo(aCirculo)
     areCirculo.value = areaCirculo(aCirculo)
 
 }
+
+export { calcularCirculo }

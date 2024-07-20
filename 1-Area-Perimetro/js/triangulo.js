@@ -1,8 +1,4 @@
 
-const btnTriangulo = document.querySelector('#calcular-triangulo')
-btnTriangulo.addEventListener("click", calcularTriangulo)
-
-
 function perimetroTriangulo(a, b, c) {
     return a + b + c
 }
@@ -24,3 +20,5 @@ function calcularTriangulo(e) {
     areTriangulo.value = areaTriangulo(bTriangulo, hTriangulo)
 
 }
+
+export {calcularTriangulo}
