@@ -18,7 +18,7 @@ entrada.focus()
 function handleAdd(e) {
     e.preventDefault()
     console.log(entrada.value)
-    if (entrada.value < 1 || entrada.value >= 120) {
+    if (entrada.value < 1 || entrada.value > 120) {
         alert("debe ingresar un numero entre 1 y 120")
         entrada.value = ''
         entrada.focus()
