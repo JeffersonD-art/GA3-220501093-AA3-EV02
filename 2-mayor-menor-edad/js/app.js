@@ -52,7 +52,7 @@ form.addEventListener('submit', handleAdd)
 
 function calculos() {
     minimo = Math.min(...edades)
-    maximo = Math.min(...edades)
+    maximo = Math.max(...edades)
 
     edades.forEach(edad => {
         edad < 18 ? ++menor : ++mayor
