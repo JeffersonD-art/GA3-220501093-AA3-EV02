@@ -26,20 +26,14 @@ input{
     &:focus{
         border: 2px solid #a364ff;
     }
-    
-
-
 }
-
 /* Contenedor main */
-
 .contenedor {
     background-color: #1f2b3e;
     width: 500px;
     margin: auto;
     border-radius: 20px;
     padding: 16px;
-
 
     & .titulo {
         text-align: center;
@@ -69,15 +63,11 @@ input{
                 }
             }
 
-
-
             & .contenedor-cont{
                 height: 300px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-
 
                 .inputs-salidas{
                     margin-top: 16px;
@@ -85,10 +75,7 @@ input{
                     
                 }
             }
-
         }
-
-
 
         & .btn{
             
