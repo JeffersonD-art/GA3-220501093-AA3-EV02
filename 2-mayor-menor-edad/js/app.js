@@ -1,4 +1,4 @@
-const btn = document.querySelector("#btn")
+const form = document.querySelector("#form")
 const entrada = document.querySelector('#input-entrada')
 document.querySelector('.entradas span').textContent = 1
 
@@ -15,7 +15,8 @@ let iterador = 1
 const edades = []
 entrada.focus()
 
-function handleAdd() {
+function handleAdd(e) {
+    e.preventDefault()
     console.log(entrada.value)
     if (entrada.value < 1 || entrada.value >= 120) {
         alert("debe ingresar un numero entre 1 y 120")
@@ -46,7 +47,7 @@ function handleAdd() {
 
 }
 
-btn.addEventListener('click', handleAdd)
+form.addEventListener('submit', handleAdd)
 
 
 function calculos() {
