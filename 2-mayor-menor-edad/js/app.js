@@ -38,7 +38,10 @@ function handleAdd(e) {
         if (iterador <= 10) {
             document.querySelector('.entradas span').textContent = iterador
         } else {
-            document.querySelector('.entradas span').textContent = 'no puede ingresar mas edades'
+            document.querySelector('#input-entrada').disabled = true
+            document.querySelector('#input-entrada').placeholder = 'No puedes ingresar más'
+            
+
             calculos()
         }
 
