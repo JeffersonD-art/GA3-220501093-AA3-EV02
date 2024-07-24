@@ -3,7 +3,7 @@
 Si el repositorio te ha sido de utilidad, ¡mé encantaría saberlo! 👍
 
 > [!IMPORTANT]  
-> Tu apoyo es muy importante para mis, y una forma rápida de mostrar tu aprecio es dándole una ⭐️ al proyecto. Esto me ayuda a saber que estoy en el camino correcto y motiva a seguir mejorando.
+> Tu apoyo es muy importante para mi, y una forma rápida de mostrar tu aprecio es dándole una ⭐️ al proyecto. Esto me ayuda a saber que estoy en el camino correcto y motiva a seguir mejorando.
 > ¡Gracias por tu apoyo. 🙌
 
 # Resolución a problemas algorítmicos aplicando estructuras de almacenamiento 
