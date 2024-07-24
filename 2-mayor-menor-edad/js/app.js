@@ -50,10 +50,15 @@ function calculos() {
 	minimo = Math.min(...edades);
 	maximo = Math.max(...edades);
 
-	edades.forEach((edad) => {
-		edad < 18 ? ++menor : ++mayor;
-		edad >= 60 ? ++adultoMayor : undefined;
-	});
+	menor = edades.filter((edad) => edad < 18); 
+	mayor = edades.filter((edad) => edad > 18);
+	adultoMayor = edades.filter((edad) => edad > 60);
+
+	// SE PUEDE HACER UN FOREACH Y SER MAS EFICIENTE
+	// edades.forEach((edad) => {
+	// 	edad < 18 ? ++menor : ++mayor;
+	// 	edad >= 60 ? ++adultoMayor : undefined;
+	// });
 
 	for (let i = 0; i < edades.length; i++) {
 		suma += edades[i];
@@ -62,9 +67,9 @@ function calculos() {
 	promedio = suma / edades.length;
 
 	console.log(menor, mayor, adultoMayor, minimo, maximo, promedio);
-	document.querySelector(".menor span").textContent = menor;
-	document.querySelector(".mayor span").textContent = mayor;
-	document.querySelector(".adultoMayor span").textContent = adultoMayor;
+	document.querySelector(".menor span").textContent = menor.length; //.length lee la longitud del array
+	document.querySelector(".mayor span").textContent = mayor.length;
+	document.querySelector(".adultoMayor span").textContent = adultoMayor.length;
 	document.querySelector(".minima span").textContent = minimo;
 	document.querySelector(".maxima span").textContent = maximo;
 	document.querySelector(".promedio span").textContent = promedio;
