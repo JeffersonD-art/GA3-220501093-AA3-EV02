@@ -34,7 +34,7 @@ produzca la lista ordenada de la mezcla de los dos, por ejemplo, si los dos arre
 3 6 9 17 y 2 4 10 17, respectivamente, la lista de números en la pantalla debe ser 1 2 3 4 6 9 10 17 17.
 Limite los vectores a un tamaño de 5 y debe validar en cada ingreso que realmente se estén ingresando
 los datos de forma ascendente.
-### 👉[En Desarollo](https://jeffersond-art.github.io/GA3-220501093-AA3-EV02/3-ordenar-vectores)👈
+### 👉[Proyecto 3 aquí](https://jeffersond-art.github.io/GA3-220501093-AA3-EV02/3-ordenar-vectores)👈
 
 ## Actividad 4
 4. Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más
