@@ -30,7 +30,7 @@ function handleInputs(inputElement, array, span) {
 	if (array.length === 0 || inputElement.value > array[array.length - 1]) {
 		array.push(valueParsedo);
 		limpiar(inputElement);
-		span.innerText = `Vector : [ ${array.join(", ")} ]`;
+		span.innerText = `[ ${array.join(", ")} ]`;
 	} else {
 		alert(`Ingrese un numero mayor a ${array[array.length - 1]}`);
 		limpiar(inputElement);
@@ -51,7 +51,7 @@ form.addEventListener("submit", (e) => {
 	arrayUnida.sort((a, b) => {
 		return a - b;
 	});
-	resultado.innerText = `Vector ordenado : [ ${arrayUnida.join(", ")} ]`;
+	resultado.innerText = `[ ${arrayUnida.join(", ")} ]`;
 	console.log(arrayUnida);
 });
 
