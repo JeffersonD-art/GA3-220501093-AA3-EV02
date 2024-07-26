@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area y Perimero</title>
+    <title>Emisora</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>hola</h1>
+    <h1>Emisora</h1>
 
+    <div class="contenedor">
+        <div class="header">
+            <button class="btn-agregar btn"> Agregar Persona</button>
+            <div>
+                <select disabled class="indice" id="indice">
+                    <option selected disabled value="asdasd">-- selecione un indice --</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                </select>
+            </div>
+        </div>
+        <p class="personas">Personas Ingresadas: <span class="nPersonas">0</span></p>
+        <div class="contenido">
+            <p class="vacio center">ingresa primero una persona</p>
+        </div>
+    </div>
 
+    <dialog class="modalDialogo" id="modalDialogo">
+        <form id="form" class="center" action="">
+            <h2>Ingrese los datos</h2>
+            <fieldset>
+                <legend>Identificación</legend>
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" required type="text">
+                <label for="cedula">Cédula</label>
+                <input name="cedula" id="cedula" required type="number">
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input name="nacimiento" id="nacimiento" required type="date">
+                <label for="origen">Lugar de Origen</label>
+                <input name="origen" id="origen" required type="text">
+            </fieldset>
 
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <label for="email">Email</label>
+                <input name="email" id="email" required type="email">
+                <label for="residencia">Residencia</label>
+                <input name="residencia" id="residencia" required type="text">
+            </fieldset>
 
+            <fieldset>
+                <legend> Musica Preferencias Personales</legend>
+                <div class="contenedor-cancion">
+                    <div class="cancion-item">
+                        <label for="artista">Artista 1 </label>
+                        <input name="artista1" id="artista" required type="text">
+                    </div>
+                    <div class="cancion-item">
+                        <label for="cancion">Canción 1</label>
+                        <input name="cancion1" id="cancion" required type="text">
+                    </div>
+                </div>
+                <div class="contenedor-cancion">
+                    <div class="cancion-item">
+                        <label for="artista">Artista 2 </label>
+                        <input name="artista2" id="artista" required type="text">
+                    </div>
+                    <div class="cancion-item">
+                        <label for="cancion">Canción 2</label>
+                        <input name="cancion2" id="cancion" required type="text">
+                    </div>
+                </div>
+                <div class="contenedor-cancion">
+                    <div class="cancion-item">
+                        <label for="artista">Artista 3 </label>
+                        <input name="artista3" id="artista" required type="text">
+                    </div>
+                    <div class="cancion-item">
+                        <label for="cancion">Canción 3</label>
+                        <input name="cancion3" id="cancion" required type="text">
+                    </div>
+                </div>
+            </fieldset>
 
-
-<script src="js/app.js"></script>
+            <input class="btn btnForm" required type="submit" value="Agregar">
+        </form>
+    </dialog>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

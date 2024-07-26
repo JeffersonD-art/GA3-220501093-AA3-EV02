@@ -1,5 +1,162 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn {
+	width: 100%;
+	padding: 8px;
+	margin-top: 8px;
+	background-color: blueviolet;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+.btn-agregar {
+	width: auto;
+	margin: 0;
+}
+
+.center {
+	position: absolute;
+	float: left;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+body {
+	font-family: system-ui, -apple-system, sans-serif;
+	background-color: rgb(65, 63, 83);
+	height: 100vh;
+	width: 100vw;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+
+	h1 {
+		text-align: center;
+		color: rgb(236, 217, 247);
+	}
+}
+
+.contenedor {
+	width: 500px;
+	padding: 20px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	height: 500px;
+	border-radius: 16px;
+
+	.header {
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 40px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+
+		& .indice {
+			width: auto;
+			padding: 4px;
+		}
+	}
+}
+
+.contenido {
+	font-weight: bold;
+
+	& .vacio {
+		font-size: 25px;
+
+		font-weight: bold;
+		text-transform: uppercase;
+		color: blueviolet;
+	}
+
+	.identificacion {
+		margin: 16px 0;
+	}
+	.contacto {
+		margin: 16px 0;
+	}
+	.canciones {
+		margin: 8px 0;
+		& div {
+			display: flex;
+
+			& p {
+				width: 50%;
+			}
+		}
+	}
+
+	& span {
+		font-weight: 400;
+	}
+}
+
+.modalDialogo {
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	border: none;
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+	h2 {
+		text-align: center;
+		color: blueviolet;
+	}
+
+	form {
+		width: 400px;
+		margin: 0 auto;
+		padding: 20px;
+		border-radius: 8px;
+		background-color: white;
+
+		fieldset {
+			border: none;
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+
+			legend {
+				width: 100%;
+			}
+			label {
+				width: 200px;
+				font-size: 18px;
+				color: gray;
+				margin: 8px 0 0 0;
+			}
+			input {
+				padding: 4px;
+			}
+
+			.contenedor-cancion {
+				margin-top: 8px;
+				display: flex;
+				justify-content: center;
+
+				.cancion-item {
+					& input {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
 }
