@@ -49,7 +49,7 @@ cada una de las personas que se ingrese, teniendo en cuenta lo anterior, se sugi
 mostrar un menú que permite las siguientes opciones:
 a. Agregar una persona con los datos que se listan anteriormente.
 b. Mostrar la información personal de una persona particular por medio de su posición en el vector.
-### 👉[Proyecto 4 aquí](https://jeffersond-art.github.io/GA3-220501093-AA3-EV02/3-ordenar-vectores/4-emisora.rating-canciones)👈
+### 👉[Proyecto 4 aquí](https://jeffersond-art.github.io/GA3-220501093-AA3-EV02/4-emisora.rating-canciones/)👈
 
 
 
